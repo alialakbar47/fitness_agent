@@ -15,11 +15,10 @@ An intelligent chatbot for FitFusion Studio, a fictional fitness and wellness ce
 ```
 business_bot/
 ├── me/
-│   ├── about_business.pdf          # Business profile document
+│   ├── about_business.pdf          # Business profile document (included)
 │   └── business_summary.txt        # Business summary text
 ├── business_agent.ipynb            # Main Jupyter notebook
 ├── app.py                          # Gradio deployment script
-├── generate_pdf.py                 # PDF generation script
 ├── requirements.txt                # Python dependencies
 ├── .env                            # API keys (not committed)
 ├── .env.example                    # Template for environment variables
@@ -50,13 +49,7 @@ Your `.env` file should contain:
 GOOGLE_API_KEY=your_actual_api_key_here
 ```
 
-### 3. Generate Business Documents
-
-```powershell
-python generate_pdf.py
-```
-
-### 4. Run the Application
+### 3. Run the Application
 
 #### Option A: Using Jupyter Notebook
 
@@ -185,7 +178,6 @@ FitFusion Studio is a fictional AI-powered fitness and wellness center featuring
    ```powershell
    pip install -r requirements.txt
    # Add your API key to .env file
-   python generate_pdf.py
    ```
 
 2. **Run the chatbot:**
@@ -225,13 +217,3 @@ FitFusion Studio is a fictional AI-powered fitness and wellness center featuring
 - Check tool descriptions are clear
 - Verify user message matches tool use case
 - Review system prompt instructions
-
-## 📄 License
-
-This is a student project for educational purposes.
-
-## 👤 Author
-
-[Your Name Here]  
-[Course/Assignment Info]  
-October 2025
